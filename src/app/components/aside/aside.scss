@@ -1,0 +1,19 @@
+aside {
+    width: 20%;
+    min-width: 200px;
+    height: 88%;
+
+    .new-message {
+        width: 78%;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
+
+    .active {
+        background-color: var(--bs-main-bg);
+    }
+
+    .content {
+        border-radius: 0 50em 50em 0;
+    }
+}

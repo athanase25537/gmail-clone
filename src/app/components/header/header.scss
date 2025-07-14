@@ -5,7 +5,7 @@ header {
     align-items: center;
     
     i:hover {
-        background-color: rgba(221, 217, 217, 0.473);
+        background-color: var(--bs-main-bg);
         cursor: pointer;
     }
 
