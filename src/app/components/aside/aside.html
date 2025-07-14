@@ -3,9 +3,18 @@
         <i class="fa-regular fa-pen-to-square me-4"></i>
         <span>Nouveau message</span>
     </div>
-    @for(link of links; track $index) {
-        <div (click)="toggleActive(link.id)" [ngClass]="{'active': activeId == link.id}" class="content">
-            <app-link [myLink]="link"/>
-        </div>
-    }
+    <div class="my-nav">
+        @for(link of links; track $index) {
+            <div (click)="toggleActive(link.id)" [ngClass]="{'active': activeId == link.id}" class="content">
+                <app-link [myLink]="link"/>
+            </div>
+        }
+    </div>
+
+    <div class="my-nav my-3">
+        <p class="px-4 text-muted d-flex justify-content-between align-items-center">
+            <span>Libelles</span>
+            <i class="fa-solid fa-plus"></i>
+        </p>
+    </div>
 </aside>
