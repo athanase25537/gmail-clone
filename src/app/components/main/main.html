@@ -1,6 +1,6 @@
 <div class="card border w-100">
-    <div class="card-header">
-        <div class="d-flex justify-content-between">
+    <div class="card-header px-0">
+        <div class="d-flex px-4 mb-3 justify-content-between">
             <div class="icon-left">
                 <div class="selec">
                     <i class="fa-regular fa-square"></i>
@@ -26,8 +26,10 @@
             </div>
         </div>
 
-        <div class="header-links">
-            
+        <div class="header-links d-flex">
+            @for(headerLink of headerLinks; track $index) {
+                <app-header-links [myLink]="headerLink"/>
+            }
         </div>
     </div>
     
