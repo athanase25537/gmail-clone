@@ -5,7 +5,6 @@ a {
     text-decoration: none;
 }
 
-a:hover,
-a.active {
-    background-color: var(--bs-main-bg);
+a:hover {
+    background-color: var(--bs-main-bg-hover);
 }

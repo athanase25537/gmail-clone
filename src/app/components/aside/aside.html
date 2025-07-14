@@ -1,9 +1,11 @@
-<aside>
-    <app-link/>
-    <app-link/>
-    <app-link/>
-    <app-link/>
-    <app-link/>
-    <app-link/>
-    <app-link/>
+<aside class="my-3">
+    <div class="new-message ms-2 mb-3 bg-white py-3 btn text-muted">
+        <i class="fa-regular fa-pen-to-square me-4"></i>
+        <span>Nouveau message</span>
+    </div>
+    @for(link of links; track $index) {
+        <div (click)="toggleActive(link.id)" [ngClass]="{'active': activeId == link.id}" class="content">
+            <app-link [myLink]="link"/>
+        </div>
+    }
 </aside>

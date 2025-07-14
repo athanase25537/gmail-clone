@@ -8,5 +8,5 @@ import { LinkModel } from '../../models/linkModel';
   styleUrl: './link.scss'
 })
 export class Link {
-  myLink = input<LinkModel>(new LinkModel('text-muted py-2 px-4', 'Boite de reception', '#'));
+  myLink = input<LinkModel>(new LinkModel(0, 'fa-solid fa-square', 'Boite de reception', '#'));
 }
