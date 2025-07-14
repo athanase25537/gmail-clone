@@ -1,0 +1,17 @@
+.card {
+    .card-header {
+        .icon-left,
+        .icon-right {
+            width: fit-content;
+            display: flex;
+            gap: 30px;
+            align-items: center;
+
+            select {
+                width: 20px;
+                background: none;
+                border: none;
+            }
+        }
+    }
+}
