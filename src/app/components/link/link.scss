@@ -1,0 +1,11 @@
+a {
+    display: inline-block;
+    width: 100%;
+    border-radius: 0 50em 50em  0;
+    text-decoration: none;
+}
+
+a:hover,
+a.active {
+    background-color: var(--bs-main-bg);
+}
