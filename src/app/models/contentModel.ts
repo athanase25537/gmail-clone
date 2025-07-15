@@ -6,5 +6,6 @@ export class ContentModel {
         public content: string,
         public time: string,
         public isView: boolean = false,
+        public isCheck: boolean = false,
     ) { }
 }

@@ -12,4 +12,17 @@ export class MainItem {
   myContent = input<ContentModel>(
     new ContentModel(true, true, "Google notification", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, sequi?", "13:05")
   )
+
+  toggleIsFarorite() {
+    this.myContent().isFavorite = !this.myContent().isFavorite;
+  }
+
+  toggleImportant() {
+    this.myContent().isImportant = !this.myContent().isImportant;
+  }
+
+  toggleIsCheck() {
+    console.log("here we are")
+    this.myContent().isCheck = !this.myContent().isCheck;
+  }
 }

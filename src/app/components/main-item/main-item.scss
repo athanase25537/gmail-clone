@@ -4,6 +4,10 @@
         .titles {
             width: 30%;
 
+            i:hover {
+                background-color: var(--bs-main-bg-hover);;
+            }
+
             span {
                 font-size: .9rem;
             }
