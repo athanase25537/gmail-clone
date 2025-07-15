@@ -4,7 +4,7 @@
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 
     div {
-        div {
+        .titles {
             .text-muted-max {
                 color: rgb(33, 37, 41, .75) !important;
             }
@@ -16,6 +16,17 @@
     }
 }
 
+.container {
+    div {
+        .titles {
+            width: 30%;
+        }
+
+        .cont {
+            width: 70%;
+        }
+    }
+}
 .important {
     color: #f4c542 !important;
 }

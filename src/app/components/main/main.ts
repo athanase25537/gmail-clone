@@ -4,6 +4,8 @@ import { LinkModel } from '../../models/linkModel';
 import { HeaderLinkService } from '../../services/header-link-service';
 import { CommonModule } from '@angular/common';
 import { MainItem } from "../main-item/main-item";
+import { ContentModel } from '../../models/contentModel';
+import { ContentService } from '../../services/content-service';
 
 @Component({
   selector: 'app-main',
@@ -14,12 +16,17 @@ import { MainItem } from "../main-item/main-item";
 export class Main implements OnInit {
   headerLinks!: LinkModel[];
   activeId!: number;
+  contents!: ContentModel[];
 
-  constructor(private headerLinkService: HeaderLinkService) { }
+  constructor(
+    private headerLinkService: HeaderLinkService,
+    private contentService: ContentService
+  ) { }
 
   ngOnInit(): void {
     this.activeId = 0;
     this.headerLinks = this.headerLinkService.getLinks();
+    this.contents = this.contentService.getContents();
   }
 
   toggleActive(id: number)  {
