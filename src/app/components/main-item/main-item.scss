@@ -1,0 +1,21 @@
+.container:hover {
+    cursor: pointer;
+    width: 100%;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+
+    div {
+        div {
+            .text-muted-max {
+                color: rgb(33, 37, 41, .75) !important;
+            }
+
+            .important {
+                color: #f4c542 !important;
+            }
+        }
+    }
+}
+
+.important {
+    color: #f4c542 !important;
+}

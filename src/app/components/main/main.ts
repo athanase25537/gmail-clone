@@ -3,10 +3,11 @@ import { HeaderLinks } from "../header-links/header-links";
 import { LinkModel } from '../../models/linkModel';
 import { HeaderLinkService } from '../../services/header-link-service';
 import { CommonModule } from '@angular/common';
+import { MainItem } from "../main-item/main-item";
 
 @Component({
   selector: 'app-main',
-  imports: [CommonModule, HeaderLinks],
+  imports: [CommonModule, HeaderLinks, MainItem],
   templateUrl: './main.html',
   styleUrl: './main.scss'
 })

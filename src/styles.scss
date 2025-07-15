@@ -22,3 +22,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   --bs-main-bg: rgba(221, 217, 217, 0.473);
   --bs-main-bg-hover: rgba(221, 217, 217, 0.15);
 }
+
+.text-muted-max {
+  color: rgb(138, 141, 143) !important;
+}
+
+.text-muted-max:hover {
+  color: rgb(33, 37, 41, .75);
+}
