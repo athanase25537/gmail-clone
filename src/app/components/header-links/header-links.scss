@@ -1,5 +1,6 @@
 #container {
     flex-direction: column;
+    height: 100%;
 
     a {
         display: flex;
@@ -18,7 +19,15 @@
     }
 
     a.active {
+        color: rgb(11, 87, 208);
 
+        small {
+            display: none;
+        }
+    }
+
+    a.active.text-muted {
+        color: rgb(11, 87, 208) !important;
     }
 }
 

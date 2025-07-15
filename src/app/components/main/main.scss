@@ -13,5 +13,14 @@
                 border: none;
             }
         }
+
+        .active {
+            border-bottom: 2px solid rgb(11, 87, 208);
+
+            .text-muted {
+                color: rgb(11, 87, 208);
+            }
+            
+        }
     }
 }

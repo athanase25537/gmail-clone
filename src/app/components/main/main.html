@@ -1,5 +1,5 @@
 <div class="card border w-100">
-    <div class="card-header px-0">
+    <div class="card-header pb-0 px-0">
         <div class="d-flex px-4 mb-3 justify-content-between">
             <div class="icon-left">
                 <div class="selec">
@@ -26,9 +26,15 @@
             </div>
         </div>
 
-        <div class="header-links d-flex align-items-center">
+        <div class="header-links d-flex">
             @for(headerLink of headerLinks; track $index) {
-                <app-header-links [myLink]="headerLink"/>
+                <div (click)="toggleActive(headerLink.id)" [ngClass]="{'active': activeId == headerLink.id}" class="content">
+                    @if(activeId == headerLink.id) {
+                        <app-header-links [isActive]="true" [myLink]="headerLink"/>
+                    } @else {
+                        <app-header-links [isActive]="false" [myLink]="headerLink"/>
+                    }
+                </div>
             }
         </div>
     </div>
