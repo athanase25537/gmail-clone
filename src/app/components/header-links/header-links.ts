@@ -1,10 +1,9 @@
 import { Component, input } from '@angular/core';
-import { Link } from "../link/link";
 import { LinkModel } from '../../models/linkModel';
 
 @Component({
   selector: 'app-header-links',
-  imports: [Link],
+  imports: [],
   templateUrl: './header-links.html',
   styleUrl: './header-links.scss'
 })

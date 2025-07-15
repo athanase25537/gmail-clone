@@ -4,10 +4,20 @@
         <div class="my-label d-flex">
             <div class="d-flex fs-6 gap-2 align-items-center">
                 <span>{{ myLink().label }}</span>
-                <span class="badge bg-success rounded-pill">1 nouveau</span>
+                @if(myLink().badge) {
+                    @if(myLink().id == 1) {
+                        <span class="badge bg-success rounded-pill">{{ myLink().badge }}</span>
+                    } @else if (myLink().id == 2) {
+                        <span class="badge bg-primary rounded-pill">{{ myLink().badge }}</span>
+                    } @else if (myLink().id == 3) {
+                        <span class="badge bg-warning rounded-pill">{{ myLink().badge }}</span>
+                    }
+                    
+                }
+                
             </div>
             
-            <small>Pinterest-Education for...</small>
+            <small>{{ myLink().others }}</small>
         </div>
     </a>
 </div>
