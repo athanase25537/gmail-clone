@@ -5,5 +5,6 @@ export class ContentModel {
         public title: string,
         public content: string,
         public time: string,
+        public isView: boolean = false,
     ) { }
 }

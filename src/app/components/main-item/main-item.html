@@ -9,11 +9,21 @@
             }
 
             <i class="text-muted-max fa-solid fa-bookmark" [ngClass]="{'important': myContent().isImportant}"></i>
-            <span class="">{{ myContent().title }}</span>
+            
+            @if(!myContent().isView) {
+                <span class="fw-bold">{{ myContent().title }}</span>
+            } @else {
+                <span>{{ myContent().title }}</span>
+            }
         </div>
         <div class="cont d-flex justify-content-between align-items-center">
-            <span>{{ myContent().content }}</span>
-            <small>{{ myContent().time }}</small>
+            @if(!myContent().isView) {
+                <span class="fw-bold">{{ myContent().content }}</span>
+                <small class="fw-bold">{{ myContent().time }}</small>
+            } @else {
+                <span>{{ myContent().content }}</span>
+                <small>{{ myContent().time }}</small>
+            }
         </div>
     </div>
 </div>

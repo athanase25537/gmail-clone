@@ -1,8 +1,26 @@
+.container {
+
+    div {
+        .titles {
+            width: 30%;
+
+            span {
+                font-size: .9rem;
+            }
+        }
+
+        .cont {
+            font-size: .9rem;
+            width: 70%;
+        }
+    }
+}
+
 .container:hover {
     cursor: pointer;
     width: 100%;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-
+    
     div {
         .titles {
             .text-muted-max {
@@ -16,17 +34,6 @@
     }
 }
 
-.container {
-    div {
-        .titles {
-            width: 30%;
-        }
-
-        .cont {
-            width: 70%;
-        }
-    }
-}
 .important {
     color: #f4c542 !important;
 }
